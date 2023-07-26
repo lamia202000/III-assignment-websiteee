@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- font styles lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap" rel="stylesheet">
+
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#F85559',
+          }
+        }
+      }
+    }
+  </script>
+
+
+</head>
+
+<body class="font-lato">
+
+
+
+
+
+  <header>
+
+
+    <nav class="flex justify-around bg-primary-color rounded-full mt-12 items-center mx-auto w-3/4 h-20">
+      <div>
+        <ul class="flex text-white gap-3">
+          <li><a href=""></a>Home</li>
+          <li><a href=""></a>About US</li>
+          <li><a href=""></a>Shop</li>
+          <li><a href=""></a>All fruits</li>
+        </ul>
+      </div>
+
+      <h1 class="flex items-center gap-3 text-white font-extrabold text-2xl ">
+        <img class="h-14 w-14 " src="images/logo.png" alt=""> Fruit Burst
+      </h1>
+
+      <div class="  form-control pr-8">
+
+        <input type="text" placeholder="Search" class=" rounded-3xl input input-bordered w-24 md:w-auto">
+
+
+      </div>
+    </nav>
+
+
+
+
+  </header>
+
+
+  <main>
+
+
+
+
+    <!-- carousel -->
+
+
+
+
+    <div class="carousel w-3/4 mt-14 relative left-60 max-h-fit ">
+
+
+
+      <div id="slide1" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: url('./images/banner1.png');">
+
+          <div class="hero-overlay bg-opacity-40"></div>
+
+
+          <div class="hero-content text-center text-neutral-content">
+
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+              <p class="mb-5">We supply highly quality organic products</p>
+              <button class="btn btn-primary">Shop now</button>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+
+      </div>
+
+
+
+
+      <div id="slide2" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: url('./images/banner2.png');">
+          <div class="hero-overlay bg-opacity-40"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+              <p class="mb-5">We supply highly quality organic products</p>
+              <button class="btn btn-primary">Shop now</button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+
+
+
+
+      <div id="slide3" class="carousel-item relative w-full">
+        <div class="hero min-h-screen" style="background-image: url('./images/banner3.png');">
+          <div class="hero-overlay bg-opacity-40"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+              <p class="mb-5">We supply highly quality organic products</p>
+              <button class="btn btn-primary">Shop now</button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+
+
+
+      <div id="slide4" class="carousel-item relative  w-full ">
+        <div class="hero min-h-screen" style="background-image: url('./images/banner4.png');">
+          <div class="hero-overlay bg-opacity-40"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+              <p class="mb-5">We supply highly quality organic products</p>
+              <button class="btn btn-primary">Shop now</button>
+            </div>
+          </div>
+        </div>
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- upper image -->
+
+    <!-- <div class="flex bg-white relative left-96 right-96 top-11 text-center justify-between items-center max-w-4xl">
+
+      <div>
+        <img src="images/fruit1.png" alt="">
+        <p>Grape</p>
+      </div>
+
+
+
+      <div>
+        <img src="images/fruit2.png" alt="">
+        <p>Orange</p>
+      </div>
+
+
+      <div>
+        <img src="images/fruit3.png" alt="">
+        <p>Mango</p>
+      </div>
+
+
+
+      <div>
+        <img src="images/fruit4.png" alt="">
+        <p>Strawberry</p>
+      </div>
+
+
+      <div>
+        <img src="images/fruit5.png" alt="">
+        <p>janina!</p>
+      </div>
+
+
+    </div> -->
+
+
+
+
+
+    <div class="flex justify-evenly mt-40 mx-auto ">
+      <div>
+        <h1 class=" text-6xl ">Deal of the day</h1>
+        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin
+          literature from 45 BC, making it over 2000 years old.</p>
+      </div>
+
+      <div>
+        <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:15;"></span>
+            </span>
+            days
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:10;"></span>
+            </span>
+            hours
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:24;"></span>
+            </span>
+            min
+          </div>
+          <div class="flex flex-col">
+            <span class="countdown font-mono text-5xl">
+              <span style="--value:17;"></span>
+            </span>
+            sec
+          </div>
+        </div>
+      </div>
+    </div>
+      
+
+
+      <!-- card section -->
+
+
+<div class="flex justify-center lg:flex-row sm:flex-col md:flex-col "
+>
+    <div class="card w-96 bg-base-100 shadow-xl relative">
+      <figure class="px-10 pt-10">
+        <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">12.90$ - 18.85$</h2>
+        <p>Apple</p>
+        <a class="text-[#F85559]" href="">Details</a>
+      </div>
+    </div>
+
+
+
+
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src="/images/fruit7.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">12.90$ - 18.85$</h2>
+        <p>Orange</p>
+        <a class="text-[#F85559]" href="">Details</a>
+      </div>
+    </div>
+
+
+
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src="/images/fruit8.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">12.90$ - 18.85$</h2>
+        <p>Red Dragon</p>
+        <a class="text-[#F85559]" href="">Details</a>
+      </div>
+
+
+
+
+    </div>
+    <div class="card w-96 bg-base-100 shadow-xl">
+      <figure class="px-10 pt-10">
+        <img src="/images/fruit9.png" alt="Shoes" class="rounded-xl" />
+      </figure>
+      <div class="card-body items-center text-center">
+        <h2 class="card-title">12.90$ - 18.85$</h2>
+        <p>Banana</p>
+        <a class="text-[#F85559]" href="">Details</a>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+  </main>
+
+</body>
+
+</html>
